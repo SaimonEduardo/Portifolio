@@ -1,0 +1,352 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Geral */
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  padding-left: 15px;
+}
+
+span {
+  color: #7477FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7477FF;
+}
+
+/* Imagens */
+.imagens {
+  max-width: 1000px;
+  max-height: 400px;
+}
+
+/* Parte 1 */
+#parte1 {
+  background-color: #0F172A;
+  min-height: 100vh;
+  gap: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  padding: 40px 100px 0;
+  font-family: "DM Serif Text", serif;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  margin: 200px 0 0 150px;
+  gap: 500px;
+  font-size: 25px;
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.texto h1 {
+  padding: 80px;
+  font-size: 50px;
+}
+
+.link1 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: antiquewhite;
+}
+
+.link1:hover {
+  color: #7477FF;
+}
+
+/* Parte 2 */
+#parte2 {
+  background-color: #1E293B;
+  min-height: 100vh;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 245px;
+  padding-right: 100px;
+  gap: 200px;
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.sobre h2{
+  font-size: 45px;
+}
+
+p{
+    max-width: 45em; /* Limite de altura total */
+    overflow: hidden;
+    line-height: 1.5em; /* Altura de cada linha */
+    font-size: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-left: 80px;
+}
+.titulos {
+  font-size: 45px;
+}
+/* Parte 3 */
+#parte3 {
+  background-color: #0F172A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  gap: 20px; /* Adicionando espaçamento entre as imagens */
+}
+
+.skill-icon {
+  width: 200px; /* Defina o tamanho das imagens */
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
+
+.skill-icon:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra no hover */
+}
+
+
+/* Parte 4 */
+#parte4 {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 400px;
+  text-align: center;
+  background-color: #0F172A;
+}
+
+#parte4 h2{
+  font-size: 45px;
+}
+
+  .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding-top: 200px;
+            flex-wrap: wrap;
+        }
+
+        .cards {
+            height: 350px;
+            width: 280px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cards:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o card */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra no hover */
+        }
+
+        .card1 {
+            background-image: url(imagens/pokebolaimg.webp);
+        }
+
+        .card2 {
+            background-image: url(imagens/gorjetaimg.jpg);
+        }
+
+        .card3 {
+            background-image: url(imagens/pessoaPensando.jpg);
+        }
+
+        .card4 {
+            background-image: url(imagens/visaoComp.jpg);
+        }
+
+        /* Estilo para o texto do card */
+        .cards::after {
+            content: attr(data-nome);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .cards:hover::after {
+            opacity: 1; /* Mostra o texto ao passar o mouse */
+        }
+
+
+
+
+/* Parte 5 */
+#parte5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E293B;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 150px;
+}
+
+.contato h1 {
+  padding: 75px 0 90px;
+  color: antiquewhite;
+  font-size: 45px;
+}
+
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.lista a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  color:antiquewhite;
+}
+.lista a:hover{
+  color: white;
+}
+
+.lista img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F172A;
+  color: white;
+  padding: 20px;
+}
+
+/* Geral */
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "DM Serif Text", serif; /* Adicionando a fonte do h1 */
+}
+
+h2, .titulos, p {
+  font-family: "DM Serif Text", serif; /* Aplicando a fonte ao texto geral */
+}
+
+span {
+  color: #7477FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7477FF;
+}
+
+/* Restante do CSS mantido como está */
+
+/* Estilo para a seta fixa */
+/* Estilo para o botão "Volte ao topo" */
+.voltar-topo {
+  position: fixed;
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px; /* Distância da lateral direita */
+  z-index: 100; /* Garantir que fique sobre outros elementos */
+}
+
+/* Estilo para o botão */
+.btn-voltar-topo {
+  padding: 15px 30px;
+  background-color: #7477FF; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (hover) */
+.btn-voltar-topo:hover {
+  background-color: #1a1a2e; /* Cor de fundo mais escura no hover */
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
